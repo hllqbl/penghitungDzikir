@@ -1,0 +1,28 @@
+header {
+  font-family: "Montserrat", sans-serif;
+  height: 60px;
+  box-shadow: 8px 8px 24px 6px rgba(66, 68, 90, 1);
+}
+
+nav {
+  margin: 0 10%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerNama {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.kontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Horizontal */
+  align-items: center;     /* Vertikal */
+  height: 100vh;           /* Full tinggi layar */
+  margin: 0;
+  gap: 40px;
+}
