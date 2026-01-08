@@ -1,7 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
 header {
   font-family: "Montserrat", sans-serif;
   height: 60px;
   box-shadow: 8px 8px 24px 6px rgba(66, 68, 90, 1);
+
+  margin-bottom: 50px;
 }
 
 nav {
@@ -17,12 +26,121 @@ nav {
   font-weight: bold;
 }
 
-.kontainer {
+.kontakCreator > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.kontakCreator > li {
+  text-decoration: none;
+  color: black;
+}
+
+.gridKontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "deskripsi  deskripsi deskripsi logo"
+    "deskripsi  deskripsi deskripsi logo"
+    "deskripsi  deskripsi deskripsi logo"
+    "kontak kontak kontak kontak";
+
+  gap: 20px;
+  padding: 10px;
+}
+
+.deskripsi {
+  grid-area: deskripsi;
+  background-color: rgba(0, 255, 0, 0.2);
+
+  gap: 4px;
+  padding: 20px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Horizontal */
-  align-items: center;     /* Vertikal */
-  height: 100vh;           /* Full tinggi layar */
-  margin: 0;
-  gap: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: justify;
+
+  height: 500px;
+}
+
+.deskripsi h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.deskripsi h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.deskripsi p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 600px; /* ini kunci supaya ga kepanjangan */
+  margin-bottom: 12px;
+}
+
+.logo {
+  grid-area: logo;
+
+  height: auto;
+
+  background-color: aqua;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 10px;
+  gap: 2px;
+}
+
+.logo > img {
+  width: 100%;
+  max-width: 265px;
+  height: auto;
+  object-fit: auto;
+  display: block;
+}
+
+.kontak {
+  grid-area: kontak;
+  background-color: aquamarine;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+.kontak > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.kontak > li {
+  text-decoration: none;
+  color: black;
 }
