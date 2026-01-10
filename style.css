@@ -41,8 +41,7 @@ nav {
 
 .gridKontainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     "deskripsi  deskripsi deskripsi logo"
     "deskripsi  deskripsi deskripsi logo"
@@ -66,7 +65,7 @@ nav {
   align-items: center;
   justify-content: center;
 
-  text-align: justify;
+  text-align: center;
 
   height: 500px;
 }
@@ -137,7 +136,7 @@ nav {
 
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 50px;
 }
 
 .kontak > li {
